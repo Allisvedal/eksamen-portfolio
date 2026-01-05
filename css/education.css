@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cfc5b6;
+}
+
+/*Header*/
+header {
+  background-color: #ab0506;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.topmenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+}
+
+.menuvalg {
+  display: block;
+  text-decoration: none;
+  color: #cfc5b6;
+  font-weight: 600;
+  padding: 15px 50px;
+  border-radius: 8px;
+}
+
+.menuvalg:hover {
+  background-color: #cfc5b6;
+  color: #63120e;
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.burger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #cfc5b6;
+  margin: 5px 0;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.header-logo {
+  font-family: "dancing script", cursive;
+  color: #cfc5b6;
+  font-size: 2.5rem;
+}
+
+.header-logo-link {
+  text-decoration: none;
+  display: block;
+}
+/*Header stop*/
+
+.utdanningen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 60px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  grid-column: 1 / span 2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+  color: #ab0506;
+}
+
+.uio,
+.ek {
+  background-color: #ab0506;
+  color: #cfc5b6;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.uio h3,
+.ek h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.uio p,
+.ek p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #63120e;
+  font-family: "Playfair Display", serif;
+}
+
+.highlight-liste {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 40px;
+}
+
+.highlight-liste img {
+  height: auto;
+  max-width: 100%;
+  align-items: center;
+}
+
+.knap {
+  background-color: #ab0506;
+  color: #cfc5b6;
+  padding: 10px;
+  border: none;
+  margin: 20px 0;
+  display: inline-block;
+  justify-self: start;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/*Footer på alle sider*/
+.footer {
+  background-color: #63120e;
+  color: #cfc5b6;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 40px;
+  width: 100%;
+  row-gap: 50px;
+}
+
+.kontakt-info p {
+  line-height: 4.5;
+  margin: 0%;
+}
+
+.signatur p {
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  text-align: right;
+  font-size: 2.5rem;
+  padding: 0 40;
+}
+
+/*Footer ferdig*/
+
+/* Media query */
+@media (max-width: 700px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mindre skjermer */
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    left: auto;
+    top: 15px;
+    z-index: 100;
+  }
+
+  .topmenu {
+    display: none;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ab0506;
+    padding: 20px;
+    z-index: 99;
+  }
+  .topmenu.active {
+    display: grid;
+  }
+
+  .menuvalg {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .utdanningen {
+    grid-template-columns: 1fr;
+    padding: 40px 50px;
+    gap: 20px;
+  }
+  .intro {
+    grid-column: 1;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}

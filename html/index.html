@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>
+    <nav class="nav-grid">
+      <a href="index.html" class="header-logo-link">
+        <div class="header-logo">AV</div>
+      </a>
+
+      <ul class="topmenu">
+        <li><a class="menuvalg" href="index.html">Portfolio</a></li>
+        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+      </ul>
+      <!--Burger menu -->
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <body>
+    <section class="portfolio">
+      <img src="../img/nyttforsidebilde.webp" alt="forsidebilde" />
+    </section>
+
+    <section class="highlights">
+      <h2>Høydepunkter semester 1</h2>
+      <div class="highlights-grid">
+        <a href="../html/grunnleggendeweb.html" class="highlights-item">
+          <div class="sirkel">
+            <img src="../img/tema1.webp" alt="galleri" />
+          </div>
+        </a>
+        <a href="../html/nonprofit-sites.html" class="highlights-item">
+          <div class="sirkel">
+            <img src="../img/tema2.webp" alt="vifsite" />
+          </div>
+        </a>
+        <a href="../html/public-campaigns.html" class="highlights-item">
+          <div class="sirkel">
+            <img src="../img/tema3.webp" alt="spiltpåtøy" />
+          </div>
+        </a>
+        <a href="../html/company-websites.html" class="highlights-item">
+          <div class="sirkel">
+            <img src="../img/tema4.webp" alt="frisørsalong" />
+          </div>
+        </a>
+      </div>
+
+      <!--
+      <div class="highlight1">bilde og link til å komme inn på side</div>
+      <div class="highlight2">bilde</div>
+      <div class="highlight3">bilde</div>
+      <div class="highlight4">bilde</div> -->
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="kontakt-info">
+          <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+          <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+          <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+        </div>
+
+        <div class="signatur">
+          <p>Allis Vedal</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      <!--Burger menu -->
+      const burgerMenu = document.querySelector(".burger-menu");
+      const nav = document.querySelector(".topmenu");
+
+      burgerMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

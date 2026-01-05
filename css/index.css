@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cfc5b6;
+}
+
+/*Header*/
+header {
+  background-color: #ab0506;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.topmenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+}
+
+.menuvalg {
+  display: block;
+  text-decoration: none;
+  color: #cfc5b6;
+  font-weight: 600;
+  padding: 15px 50px;
+  border-radius: 8px;
+}
+
+.menuvalg:hover {
+  background-color: #cfc5b6;
+  color: #63120e;
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.burger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #cfc5b6;
+  margin: 5px 0;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.header-logo {
+  font-family: "dancing script", cursive;
+  color: #cfc5b6;
+  font-size: 2.5rem;
+}
+
+.header-logo-link {
+  text-decoration: none;
+  display: block;
+}
+/*Header stop*/
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #63120e;
+  font-family: "Playfair Display", serif;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 40px 20px;
+  padding: 50px 20px;
+}
+
+.highlights-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.sirkel {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #3a3a3a;
+}
+
+.sirkel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Sørger for at bildet fyller sirkelen uten å strekkes */
+}
+
+.highlights-item:hover .sirkel {
+  transform: translateY(-10px);
+}
+
+/*Footer på alle sider*/
+.footer {
+  background-color: #63120e;
+  color: #cfc5b6;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 40px;
+  width: 100%;
+  row-gap: 50px;
+}
+
+.kontakt-info p {
+  line-height: 4.5;
+  margin: 0%;
+}
+
+.signatur p {
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  text-align: right;
+  font-size: 2.5rem;
+  padding: 0 40;
+}
+
+/*Footer ferdig*/
+
+/* Media query */
+@media (max-width: 700px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mindre skjermer */
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    left: auto;
+    top: 15px;
+    z-index: 100;
+  }
+
+  .topmenu {
+    display: none;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ab0506;
+    padding: 20px;
+    z-index: 99;
+  }
+  .topmenu.active {
+    display: grid;
+  }
+
+  .menuvalg {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}

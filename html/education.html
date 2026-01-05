@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
+    <link rel="stylesheet" href="../css/education.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>
+    <nav class="nav-grid">
+      <a href="index.html" class="header-logo-link">
+        <div class="header-logo">AV</div>
+      </a>
+
+      <ul class="topmenu">
+        <li><a class="menuvalg" href="index.html">Portfolio</a></li>
+        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+      </ul>
+      <!--Burger menu -->
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <body>
+    <section class="utdanningen">
+      <div class="intro">
+        <h2>Utdanningen</h2>
+        <p>
+          I fjor gikk jeg ett år medier og kommunikasjon på Universitetet i
+          Oslo. Her bygget jeg grunnlaget mitt. Jeg fikk kunnskap om historien
+          til mediene, www, utviklingen av sensur, rettigheter og audiovisual
+          aesthetic.
+        </p>
+        <p>
+          Nå går jeg en toåring utdannelse på EK hvor jeg lærer det mer
+          praktiske. Jeg lærer helt fra startfasen hvor man "brainstormer"
+          planlegger med figma, wireframes, prototyper m.m. Jeg lærer å kode,
+          hvordan design som som slår an, alt fra skrifttype,
+          fargesammensetning, UX og UI.
+        </p>
+      </div>
+      <div class="uio">
+        <h3>Universitetet i Oslo</h3>
+        <p><strong>Jeg lærte blant annet:</strong></p>
+        <p>
+          - Grunnleggende produksjon av digitalt innhold (foto, video, tekst og
+          grafikk)
+        </p>
+        <p>
+          - Forståelse for mediekommunikasjon, målgrupper og budskapsformidling
+        </p>
+        <p>
+          - Erfaring med enkle produksjonsprosesser: idéutvikling, planlegging,
+          filming/redigering
+        </p>
+        <p>
+          - Innføring i medieteori, visuell kommunikasjon og fortellerteknikk
+          Trening i analyse av medier og sosiale plattformer
+        </p>
+        <p>- Erfaring med prosjektarbeid, samarbeid og presentasjoner</p>
+      </div>
+
+      <div class="ek">
+        <h3>Erhvervsakadami København</h3>
+        <p><strong>Jeg lærer blant annet:</strong></p>
+        <p>
+          - UX/UI-design: Forståelse av brukeropplevelse, navigasjon og
+          interaksjonsdesign for digitale flater.
+        </p>
+        <p>
+          - Koding: Grunnleggende kunnskap i HTML, CSS og JavaScript for å
+          realisere design på web.
+        </p>
+        <p>
+          - Style tiles og visuell identitet: Utvikling av konsistente
+          fargepaletter, typografi og grafiske elementer for digitalt innhold.
+        </p>
+        <p>
+          - Digitale verktøy: Kompetanse i Adobe Creative Suite, Figma og andre
+          designverktøy.
+        </p>
+        <p>
+          - Visuell kommunikasjon: Kombinasjon av farger, layout, bilder og
+          typografi for effektiv formidling.
+        </p>
+        <p>
+          - Tilgjengelighet: Kunnskap om universell utforming og prinsipper for
+          inkluderende design.
+        </p>
+      </div>
+    </section>
+
+    <section class="tidligere">
+      <h2>Tidligere skoleoppgaver</h2>
+      <div class="highlight-liste">
+        <a class="knap" href="../html/grunnleggendeweb.html"> Tema 1 </a>
+        <img src="../img/mittgalleri.jpg" alt="forsidegalleri" />
+
+        <a class="knap" href="../html/nonprofit-sites.html"> Tema 2 </a>
+
+        <img src="../img/forsidevif.jpg" alt="forsidevif" />
+
+        <a class="knap" href="../html/public-campaigns.html"> Tema 3 </a>
+
+        <img src="../img/forsideemergency.jpg" alt="forsideemergency" />
+
+        <a class="knap" href="../html/company-websites.html"> Tema 4 </a>
+
+        <img src="../img/forsidefrisør.jpg" alt="forsidefrisør" />
+      </div>
+    </section>
+  </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="kontakt-info">
+        <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+        <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+        <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+      </div>
+
+      <div class="signatur">
+        <p>Allis Vedal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    <!--Burger menu -->
+    const burgerMenu = document.querySelector(".burger-menu");
+    const nav = document.querySelector(".topmenu");
+
+    burgerMenu.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      burgerMenu.classList.toggle("active");
+    });
+  </script>
+</html>

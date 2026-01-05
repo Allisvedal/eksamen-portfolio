@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/company-websites.css" />
+  </head>
+
+  <header>
+    <nav class="nav-grid">
+      <a href="index.html" class="header-logo-link">
+        <div class="header-logo">AV</div>
+      </a>
+
+      <ul class="topmenu">
+        <li><a class="menuvalg" href="index.html">Portfolio</a></li>
+        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+      </ul>
+      <!--Burger menu -->
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <section class="hvadeter">
+        <h3>Hva grunnleggende innhold er</h3>
+        <p>
+          Grunnleggende innhold handler om å planlegge, skrive, organisere og
+          bygge opp en nettside med bilder på en forståelig og engasjerene måte
+          for brukerne. Tydlig og klart språk, kort tekst, rikitg linjeavstand
+          og lettleslig skriftstørrelse med hvor du bruker h1, h2 og h3, er
+          viktig.
+        </p>
+        <h3>Hva jeg har lært</h3>
+        <p>
+          Jeg har lært å strukturere opp en side bedre enn tidligere, ulike
+          sections og div med kulere layout. Designe en nettside mer avansert
+          enn tidligere. I tillegg har jeg lært mer om prosessen før selve
+          kodingen. Hvordan man planlegger og strukturer i figma, trello, og
+          papir prototype.
+        </p>
+        <p>
+          På denne oppgaven hadde jeg ansvar for forsiden. Jeg kodet opp
+          utseendet vi ble enige om å ha i gruppa, og fikk mer kontroll på å
+          bruke section, div og ulike kallenavn for å få tak i de rette
+          elementene i css.
+        </p>
+        <h3>Her er oppgaven jeg lagde fra uke 5 Grunnleggende innhold:</h3>
+        <img src="../img/forsidefrisør.jpg" alt="frisør" class="frisør-bilde" />
+        <a href="https://sakufuu.github.io/sakufuu/" class="knap-frisør-lenke"
+          >Klikk her for å se oppgaven min</a
+        >
+      </section>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="kontakt-info">
+        <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+        <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+        <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+      </div>
+
+      <div class="signatur">
+        <p>Allis Vedal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    <!--Burger menu -->
+    const burgerMenu = document.querySelector(".burger-menu");
+    const nav = document.querySelector(".topmenu");
+
+    burgerMenu.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      burgerMenu.classList.toggle("active");
+    });
+  </script>
+</html>

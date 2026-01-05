@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
+    <link rel="stylesheet" href="../css/public-campaigns.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>
+    <nav class="nav-grid">
+      <a href="index.html" class="header-logo-link">
+        <div class="header-logo">AV</div>
+      </a>
+
+      <ul class="topmenu">
+        <li><a class="menuvalg" href="index.html">Portfolio</a></li>
+        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+      </ul>
+      <!--Burger menu -->
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <section class="hvadeter">
+        <h3>Hva grunnleggende brukergrænsefladeudvikling er</h3>
+        <p>
+          Grunnleggende brukergrænsefladeudvikling kalles ofte fronted
+          utvikling, altså det visuelle designet som vises og kommer til liv med
+          kodingen bak. JavaScript er en generell del og handler om hvordan et
+          bilde blir til ved koder, eller hvordan noe statisk blir flyttbart og
+          bevegelig ved hjelp av koder. Det er svært viktig å forholde seg til
+          de ulike sammene og metodene som er vist til å funke. Kjør ulike
+          tester av siden din til folk og kjør igjennom lighthouse-test. Dette
+          er en indikator som vil vise om siden scorer bra på de ulike områdene
+          som er viktig for brukerne. Har siden bra kontraster, selv for de med
+          nedsatt syn? Er siden lett å finne frem på, selv for de med nedsatt
+          funkjsonsevne? Dette er viktige prinsipper vi må arbeide etter.
+        </p>
+
+        <h3>Hva jeg har lært</h3>
+        <p>
+          Jeg lærte hvordan man får en svg til å omdannes til koder. Hvordan
+          kontrastene mine spiller en stor rolle. De skal være tydlige, men på
+          en fin og elegant måte. Designet skal være kult, men lett å finne frem
+          på, både for de med og uten nedsatt funsjonalitet. Jeg har vært å
+          butte ut kun div med ulike andre koder som button, og å gi id og ikke
+          bare class.
+        </p>
+        <h3>
+          Her er oppgaven jeg lagde fra uke 4 Grunnleggende
+          brukergrænsefladeudvikling:
+        </h3>
+        <img
+          src="../img/forsideemergency.jpg"
+          alt="emergency"
+          class="tøy-bilde"
+        />
+        <a
+          href="https://allisvedal.github.io/emergency-allis/"
+          class="knap-tøy-lenke"
+          >Klikk her for å se emergency-sitet mitt</a
+        >
+      </section>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="kontakt-info">
+        <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+        <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+        <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+      </div>
+
+      <div class="signatur">
+        <p>Allis Vedal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    <!--Burger menu -->
+    const burgerMenu = document.querySelector(".burger-menu");
+    const nav = document.querySelector(".topmenu");
+
+    burgerMenu.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      burgerMenu.classList.toggle("active");
+    });
+  </script>
+</html>
