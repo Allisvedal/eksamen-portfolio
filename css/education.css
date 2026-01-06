@@ -59,7 +59,26 @@ header {
   margin: 5px 0;
 }
 
-/* Mørk modus farger */
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.header-logo {
+  font-family: "dancing script", cursive;
+  color: #cfc5b6;
+  font-size: 2.5rem;
+}
+
+.header-logo-link {
+  text-decoration: none;
+  display: block;
+}
+/*Header stop*/
+
+/* Darkmode */
 body.dark-mode {
   background-color: #1a1a1a;
   color: #f0f0f0;
@@ -93,7 +112,7 @@ body.dark-mode .knap {
 }
 
 #dark-mode:hover {
-  background-color: #cfc5b6;
+  background-color: #444;
   color: #ab0506;
 }
 
@@ -119,25 +138,7 @@ body.dark-mode #dark-mode {
   border-color: #444;
   color: #cfc5b6;
 }
-
-.nav-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 0 50px;
-}
-
-.header-logo {
-  font-family: "dancing script", cursive;
-  color: #cfc5b6;
-  font-size: 2.5rem;
-}
-
-.header-logo-link {
-  text-decoration: none;
-  display: block;
-}
-/*Header stop*/
+/* Darkmode stop*/
 
 .utdanningen {
   display: grid;
@@ -204,12 +205,16 @@ h2 {
   background-color: #ab0506;
   color: #cfc5b6;
   padding: 10px;
-  border: none;
   margin: 20px 0;
   display: inline-block;
   justify-self: start;
   text-decoration: none;
   border-radius: 8px;
+}
+
+.knap:hover {
+  background-color: #cfc5b6;
+  color: #ab0506;
 }
 
 /*Footer på alle sider*/
