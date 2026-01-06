@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tema 2</title>
     <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
     <link rel="stylesheet" href="../css/nonprofit-sites.css" />
     <link
@@ -12,84 +12,86 @@
     />
   </head>
 
-  <header>
-    <nav class="nav-grid">
-      <a href="../index.html" class="header-logo-link">
-        <div class="header-logo">AV</div>
-      </a>
-
-      <ul class="topmenu">
-        <li><a class="menuvalg" href="../index.html">Portfolio</a></li>
-        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
-        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
-      </ul>
-      <!--Burger menu -->
-      <button class="burger-menu" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
   <body>
-    <div class="container">
-      <section class="hvadeter">
-        <h3>Hva grunnleggende UX/UI er</h3>
-        <p>
-          Grunnleggende UX/UI er alt vi ser og opplever på skjermene våre. Vi
-          kan tenke på UX/UI som et hus, der UX er arkitekturen, hvor dørene i
-          et hus er plassert og alle praktiske valg. Mens UI er intreøret,
-          hvilke farger skal veggene ha, og hvilke dørhåndtak skal dørene ha? UI
-          står for User Interface og handler om det visuelle. Alt vi ser og kan
-          trykke på. Her kommer alle valgene våre inn, hvilke farger, knapper,
-          fonter, ikoner og bildevalg. UX står for User Experience og handler om
-          selve brukeropplevelsen. Alle valgene vi som designere tar og hvordan
-          det blir møtt av brukerne. Er det lett å finne frem? Er fargene godt
-          satt sammen så det er behagelig å se på? Er det et mønster som gjør
-          siden brukervennlig? Og er fonden lett leselig? Det er derfor man
-          utfører ulike tester som lighthouse-testen,
-        </p>
+    <header>
+      <nav class="nav-grid">
+        <a href="../index.html" class="header-logo-link">
+          <div class="header-logo">AV</div>
+        </a>
 
-        <h3>Hva jeg har lært</h3>
-        <p>
-          Jeg lærte å sette sammen farger slik at det skal bli behagelig for
-          brukerne, noe jeg må si jeg har blitt bedre til, hvilke fonder som
-          passer godt til ulike steder men ulike intensjoner
-        </p>
-        <h3>Her er oppgaven jeg lagde fra uke 3 Grunnleggende UX/UI:</h3>
-        <img src="../img/forsidevif.jpg" alt="vifsite" class="vif-bilde" />
-        <a
-          href="https://allisvedal.github.io/UXUI_Allis/"
-          class="knap-vif-lenke"
-          >Klikk her for å se oppgaven mitt</a
-        >
-      </section>
-    </div>
+        <ul class="topmenu">
+          <li><a class="menuvalg" href="../index.html">Portfolio</a></li>
+          <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+          <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+        </ul>
+        <!--Burger menu -->
+        <button class="burger-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hvadeter">
+          <h3>Hva grunnleggende UX/UI er</h3>
+          <p>
+            Grunnleggende UX/UI er alt vi ser og opplever på skjermene våre. Vi
+            kan tenke på UX/UI som et hus, der UX er arkitekturen, hvor dørene i
+            et hus er plassert og alle praktiske valg. Mens UI er intreøret,
+            hvilke farger skal veggene ha, og hvilke dørhåndtak skal dørene ha?
+            UI står for User Interface og handler om det visuelle. Alt vi ser og
+            kan trykke på. Her kommer alle valgene våre inn, hvilke farger,
+            knapper, fonter, ikoner og bildevalg. UX står for User Experience og
+            handler om selve brukeropplevelsen. Alle valgene vi som designere
+            tar og hvordan det blir møtt av brukerne. Er det lett å finne frem?
+            Er fargene godt satt sammen så det er behagelig å se på? Er det et
+            mønster som gjør siden brukervennlig? Og er fonden lett leselig? Det
+            er derfor man utfører ulike tester som lighthouse-testen,
+          </p>
+
+          <h3>Hva jeg har lært</h3>
+          <p>
+            Jeg lærte å sette sammen farger slik at det skal bli behagelig for
+            brukerne, noe jeg må si jeg har blitt bedre til, hvilke fonder som
+            passer godt til ulike steder men ulike intensjoner
+          </p>
+          <h3>Her er oppgaven jeg lagde fra uke 3 Grunnleggende UX/UI:</h3>
+          <img src="../img/forsidevif.jpg" alt="vifsite" class="vif-bilde" />
+          <a
+            href="https://allisvedal.github.io/UXUI_Allis/"
+            class="knap-vif-lenke"
+            >Klikk her for å se oppgaven mitt</a
+          >
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="kontakt-info">
+          <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+          <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+          <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+        </div>
+
+        <div class="signatur">
+          <p>Allis Vedal</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      <!--Burger menu -->
+      const burgerMenu = document.querySelector(".burger-menu");
+      const nav = document.querySelector(".topmenu");
+
+      burgerMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+      });
+    </script>
   </body>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="kontakt-info">
-        <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
-        <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
-        <p><strong>Telefon:</strong> +47 93 60 68 22</p>
-      </div>
-
-      <div class="signatur">
-        <p>Allis Vedal</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    <!--Burger menu -->
-    const burgerMenu = document.querySelector(".burger-menu");
-    const nav = document.querySelector(".topmenu");
-
-    burgerMenu.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      burgerMenu.classList.toggle("active");
-    });
-  </script>
 </html>

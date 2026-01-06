@@ -59,6 +59,67 @@ header {
   margin: 5px 0;
 }
 
+/* Mørk modus farger */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Juster andre elementer når dark-mode er aktiv */
+body.dark-mode .intro p,
+body.dark-mode h2 {
+  color: #cfc5b6;
+}
+
+body.dark-mode .uio,
+body.dark-mode .ek,
+body.dark-mode .knap {
+  background-color: #444;
+  color: #fff;
+}
+
+/* --- DARK MODE STYLING --- */
+
+/* Selve knappen plassert i header */
+#dark-mode {
+  background-color: transparent;
+  color: #ab0506;
+  border: 1px solid #cfc5b6;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-color: #ab0506;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+#dark-mode:hover {
+  background-color: #cfc5b6;
+  color: #ab0506;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .uio,
+body.dark-mode .ek,
+body.dark-mode .knap {
+  background-color: #333333;
+  color: #cfc5b6;
+  border: 1px solid #444;
+}
+
+body.dark-mode h2,
+body.dark-mode .intro p {
+  color: #cfc5b6;
+}
+
+body.dark-mode #dark-mode {
+  border-color: #444;
+  color: #cfc5b6;
+}
+
 .nav-grid {
   display: grid;
   grid-template-columns: auto 1fr;

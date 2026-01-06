@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tema 1</title>
     <link rel="icon" type="image/svg" href="../img/rundfavicon.svg" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,82 +17,87 @@
     <link rel="stylesheet" href="../css/grunnleggendeweb.css" />
   </head>
 
-  <header>
-    <nav class="nav-grid">
-      <a href="../index.html" class="header-logo-link">
-        <div class="header-logo">AV</div>
-      </a>
-
-      <ul class="topmenu">
-        <li><a class="menuvalg" href="../index.html">Portfolio</a></li>
-        <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
-        <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
-      </ul>
-      <!--Burger menu -->
-      <button class="burger-menu" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
   <body>
-    <div class="container">
-      <section class="hvadeter">
-        <h3>Hva grunnleggende web er</h3>
-        <p>
-          Grunnleggende web er alt som foregår bar skjermen vi ser. For å gjøre
-          det enkelt kan vi dele det opp i tre grupper. Den første gruppen er
-          html struktur. Det kan man tenke på som "skjelettet". Gruppe nummer to
-          er css. Css er som alt av muskler, sener, blod, hud og hår. Nesten som
-          proteiner som settes sammen og danner en viss farge eller størrelse.
-          Den siste gruppen er JavaScript (Js). Js er selve motoren til
-          systemet, eller selve innredningen. Man kan tenke på det som det
-          ekstra du tilføyer til et nakent menneske. JavaScript er det som gjør
-          selve siden interaktiv og klikbar
-        </p>
+    <header>
+      <nav class="nav-grid">
+        <a href="../index.html" class="header-logo-link">
+          <div class="header-logo">AV</div>
+        </a>
 
-        <h3>Hva jeg har lært</h3>
-        <p>
-          Jeg lærte grunnleggende web, ved å sette opp koder i html systemer.
-          Ulike sectioner, og div, de forskjellige h3, h2, h1 og p. Sammen med
-          hvordan man bruker css for å style nettsiden, noe jeg synes er svært
-          sjovt å gjøre, designe og sammensette farver og mønster.
-        </p>
-        <h3>Her er oppgaven jeg lagde fra uke 2 Grunnleggende Web:</h3>
-        <img src="../img/mittgalleri.jpg" alt="galleri" class="galleri-bilde" />
-        <a
-          href="https://allisvedal.github.io/galleriallis/"
-          class="knap-galleri-lenke"
-          >Klikk her for å se galleriet mitt</a
-        >
-      </section>
-    </div>
+        <ul class="topmenu">
+          <li><a class="menuvalg" href="../index.html">Portfolio</a></li>
+          <li><a class="menuvalg" href="ommeg.html">Om meg</a></li>
+          <li><a class="menuvalg" href="education.html">Min utdanning</a></li>
+        </ul>
+        <!--Burger menu -->
+        <button class="burger-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hvadeter">
+          <h3>Hva grunnleggende web er</h3>
+          <p>
+            Grunnleggende web er alt som foregår bar skjermen vi ser. For å
+            gjøre det enkelt kan vi dele det opp i tre grupper. Den første
+            gruppen er html struktur. Det kan man tenke på som "skjelettet".
+            Gruppe nummer to er css. Css er som alt av muskler, sener, blod, hud
+            og hår. Nesten som proteiner som settes sammen og danner en viss
+            farge eller størrelse. Den siste gruppen er JavaScript (Js). Js er
+            selve motoren til systemet, eller selve innredningen. Man kan tenke
+            på det som det ekstra du tilføyer til et nakent menneske. JavaScript
+            er det som gjør selve siden interaktiv og klikbar
+          </p>
+
+          <h3>Hva jeg har lært</h3>
+          <p>
+            Jeg lærte grunnleggende web, ved å sette opp koder i html systemer.
+            Ulike sectioner, og div, de forskjellige h3, h2, h1 og p. Sammen med
+            hvordan man bruker css for å style nettsiden, noe jeg synes er svært
+            sjovt å gjøre, designe og sammensette farver og mønster.
+          </p>
+          <h3>Her er oppgaven jeg lagde fra uke 2 Grunnleggende Web:</h3>
+          <img
+            src="../img/mittgalleri.jpg"
+            alt="galleri"
+            class="galleri-bilde"
+          />
+          <a
+            href="https://allisvedal.github.io/galleriallis/"
+            class="knap-galleri-lenke"
+            >Klikk her for å se galleriet mitt</a
+          >
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="kontakt-info">
+          <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
+          <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
+          <p><strong>Telefon:</strong> +47 93 60 68 22</p>
+        </div>
+
+        <div class="signatur">
+          <p>Allis Vedal</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      <!--Burger menu -->
+      const burgerMenu = document.querySelector(".burger-menu");
+      const nav = document.querySelector(".topmenu");
+
+      burgerMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+      });
+    </script>
   </body>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="kontakt-info">
-        <p><strong>Email:</strong> Alst0003@stud.ek.dk</p>
-        <p><strong>Erhvervsakademi København:</strong> Multimediadesign</p>
-        <p><strong>Telefon:</strong> +47 93 60 68 22</p>
-      </div>
-
-      <div class="signatur">
-        <p>Allis Vedal</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    <!--Burger menu -->
-    const burgerMenu = document.querySelector(".burger-menu");
-    const nav = document.querySelector(".topmenu");
-
-    burgerMenu.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      burgerMenu.classList.toggle("active");
-    });
-  </script>
 </html>
